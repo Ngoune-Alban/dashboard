@@ -18,61 +18,110 @@
 </head>
 
 <body>
-    <div class="wrapper">
-
-        <!-- Sidebar -->
-        <nav id="sidebar">
-            <div class="sidebar-header bg-primary">
-                <h3>User icon and profile</h3>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top d-flex" id="navbar">
+        <div class="d-flex justify-content-center">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fas fa-align-left"></i> 
+            </button>
+            <span class="app-name">E-planning</span>
+        </div>
+        <div class="d-flex justify-content-center left-header h-100">
+            <div class="left-header-box-element d-flex justify-content-center align-items-center notification"> <i class="fas fa-bell"></i> </div>
+            <div class="left-header-box-element d-flex justify-content-center align-items-center">
+                <img src="assets/images/logo.jpg" alt="user logo image" class="user-image">
             </div>
+        </div>
+    </nav>
 
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <i class="fas fa-home"></i><a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <i class="fas fa-home"></i><a href="#">My Wishlist</a>
-                </li>
-                <li>
-                    <i class="fas fa-home"></i><a href="#">To Do Liist</a>
-                </li>
-                <li>
-                    <i class="fas fa-home"></i><a href="#">Budget</a>
-                </li>
-                <li class="active">
-                    <i class="fas fa-home"></i><a href="#">GuestList</a>
-                </li>
-                <li>
-                    <i class="fas fa-home"></i><a href="#">Seating Table</a>
-                </li>
-                <li>
-                    <i class="fas fa-home"></i><a href="#">Wedding Website</a>
-                </li>
-                <li>
-                    <i class="fas fa-home"></i><a href="#">Real wedding</a>
-                </li>
-                <li class="active">
-                    <i class="fas fa-home"></i><a href="#">My Profile</a>
-                </li>
-                <li>
-                    <i class="fas fa-home"></i><a href="#">Log Out</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Page Content -->
-        <div id="content">
-            <nav class="navbar navbar-expand-lg  bg-white" id="navbar">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                        <i class="fas fa-align-left"></i>
-                    </button>
-
-                </div>
-            </nav>
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header bg-primary">
+            <h3>User icon and profile</h3>
         </div>
 
+        <ul class="list-unstyled components">
+            <li class="active">
+                <i class="fas  fa-home"></i><a href="#">Dashboard</a>
+            </li>
+            <li style="color:  #007bff">
+                <i class="fas fa-home"></i><a style="color:  #007bff" href="#">My Events</a>
+            </li>
+            <li>
+                <i class="fas fa-home"></i><a href="#">My Wishlist</a>
+            </li>
+            <li>
+                <i class="fas fa-list"></i><a href="#">To Do Liist</a>
+            </li>
+            <li>
+                <i class="fas fa-home"></i><a href="#">Budget</a>
+            </li>
+            <li>
+                <i class="fas fa-home"></i><a href="#">GuestList</a>
+            </li>
+            <li>
+                <i class="fas fa-home"></i><a href="#">Seating Table</a>
+            </li>
+            <li>
+                <i class="fas fa-home"></i><a href="#">Wedding Website</a>
+            </li>
+            <li>
+                <i class="fas fa-home"></i><a href="#">Real wedding</a>
+            </li>
+            <li>
+                <i class="fas fa-setting"></i><a href="#">My Profile</a>
+            </li>
+            <li>
+                <i class="fas fa-home"></i><a href="#">Log Out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+        <div class="page-content">
+            <div class="content-header d-flex flex-direction-row align-items-end">
+                <div class="titles">
+                    <div style="font-size: 1.6rem">My Events</div>
+                    <div>
+                        The event list gives you a great overview of all the events you need to attend with details.
+                    </div>
+                </div>
+                <div class="add"><i class="fas fa-plus-circle"></i> </div>
+
+            </div>
+
+            <hr>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ngoune Birthday</h5>
+                            <p class="card-text">
+                                <span><b>Category: </b>  Birthday</span><br>
+                                <span><b>Date: </b> 22/11/2020</span><br>
+                                <span><b>Time:</b> 11 AM</span>
+                            </p>
+                            <a href="#" class="btn btn-primary">More details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gutave 1 year's mariage</h5>
+                            <p class="card-text">
+                                <span><b>Category: </b>  Mariage</span><br>
+                                <span><b>Date: </b> 02/01/2021</span><br>
+                                <span><b>Time:</b> 03 PM</span>
+                            </p>
+                            <a href="#" class="btn btn-primary">More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -86,6 +135,7 @@
 
             $('#sidebarCollapse').on('click', function() {
                 $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('active');
             });
 
         });
@@ -93,4 +143,4 @@
 
 </body>
 
-</html>
+</html
