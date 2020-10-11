@@ -30,12 +30,74 @@
     border-radius: 50%;
 }
 
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    width: 200px;
+}
+
+
+/* .dropdown {
+    animation-name: header;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    position: relative;
+    animation-play-state: paused;
+} */
+
+
+/* .dropdown:hover {
+    animation-play-state: running;
+} */
+
+
+/* @keyframes header {
+    0% {
+        left: 0px;
+        top: 100px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+} */
+
 #content {
     background-color: #e5e5e5;
     padding: 100px 40px 40px 290px;
     min-height: 100vh;
     transition: all 0.3s;
 }
+
+
+/* this content is form the form that help to add event */
+
+.add-event {
+    width: 300px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    padding: 1rem;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+.submit-button {
+    width: 60%;
+    border: 1px solid white;
+    display: block;
+    margin: auto;
+    height: 30px;
+    color: #007bff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* end of the adding event form */
 
 .add {
     margin-left: auto;
@@ -46,6 +108,10 @@
 
 #content.active {
     padding: 100px 40px 40px 40px;
+}
+
+.card {
+    margin: 1rem 0rem;
 }
 
 ul {
